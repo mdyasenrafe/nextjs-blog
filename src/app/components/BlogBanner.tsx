@@ -48,7 +48,7 @@ export default function BlogBanner() {
         mousewheel={true}
         keyboard={true}
       >
-        {BlogData.map((blog, index) => (
+        {BlogData.slice(0, 3).map((blog, index) => (
           <div key={blog.id}>
             <SwiperSlide>
               <div

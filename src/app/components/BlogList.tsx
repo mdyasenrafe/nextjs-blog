@@ -2,6 +2,8 @@ import React from "react";
 import { BlogData } from "../data/BlogData";
 import Image from "next/image";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Link from "next/link";
+import "./../styles/responsive.css";
 
 export default function BlogList() {
   return (
@@ -33,10 +35,13 @@ export default function BlogList() {
                   <span>{item.description}</span>
                 )}
               </p>
-              <button className="flex justify-around items-center w-[232px] h-[59px] bg-[#181818]  md:mt-[44px] mt-[24px]">
+              <Link
+                href={`blog/${item.id}`}
+                className="flex justify-around items-center w-[232px] h-[59px] bg-[#181818]  md:mt-[44px] mt-[24px]"
+              >
                 <span className="text-white text-[18px]">READ MORE</span>
                 <AiOutlineArrowRight className="text-[#F59414] text-3xl" />
-              </button>
+              </Link>
             </div>
           );
         })}
