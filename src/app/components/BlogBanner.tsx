@@ -9,6 +9,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 export default function BlogBanner() {
   const swiperRef = useRef<any>();
@@ -61,14 +62,17 @@ export default function BlogBanner() {
                 <p className="text-white text-[14px] lg:text-[18px] xl:text-[20px]">
                   {blog.description}
                 </p>
-                <button className="flex justify-around items-center w-[198px] h-[57px] border border-white rounded-[80px] mt-[50px]">
+                <Link
+                  className="flex justify-around items-center w-[198px] h-[57px] border border-white rounded-[80px] mt-[50px]"
+                  href={`/blog/${blog.id}`}
+                >
                   <span className="text-[18px] text-white">Read More</span>
                   <img
                     src="https://i.ibb.co/F4TQgvR/Group-1693.png"
                     alt="arrow"
                     className="w-[38px] h-[38px]"
                   />
-                </button>
+                </Link>
               </div>
             </SwiperSlide>
           </div>
