@@ -106,7 +106,7 @@ export default function page({ params }: { params: { slug: string } }) {
                       )}
                     </p>
                     <Link
-                      href={`blog/${item.id}`}
+                      href={`/blog/${item.id}`}
                       className="flex justify-around items-center w-[181px] h-[46px] bg-[#181818]  md:mt-[30px] mt-[24px]"
                     >
                       <span className="text-white text-[14px]">READ MORE</span>
