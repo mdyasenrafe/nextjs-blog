@@ -33,3 +33,21 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* text-[20px] text-[#898989] */
+.blog_description {
+  font-size: 20px !important;
+  color: #898989 !important;
+  font-weight: 400;
+  font-family: "Europa Regular" !important;
+}
+.blog_title {
+  font-weight: 700 !important;
+  font-family: "Europa-Bold" !important;
+  color: #181818 !important;
+}
+.border-left-gradient {
+  border-style: solid;
+  border-left-width: 6px !important;
+  border-left-color: #ed4823 !important;
+  padding-left: 16px;
+}

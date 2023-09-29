@@ -14,7 +14,7 @@ export default function BlogList() {
             <div
               key={item.id}
               className={` ${
-                item.id % 2 === 0 ? "md:mt-[150px]" : "md:mb-[220px]"
+                (index + 1) % 2 === 0 ? "md:mt-[150px]" : "md:mb-[220px]"
               } w-[95%] pb-[50px] md:pb-0`}
             >
               <Image
